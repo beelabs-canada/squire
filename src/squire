@@ -1,0 +1,14 @@
+#!/usr/bin/env perl
+
+use 5.16.3;
+use strict;
+use warnings;
+
+# GLOBALS
+$REQUIREMENTS = [ 'curl'];
+$INSTALLS = [
+    { 'test' => 'perlbrew --version', 'requires' => 'curl', 'exec' => [ 'curl', '-L', 'https://install.perlbrew.pl', '|', 'bash']}
+];
+
+# SCRIPT VARIABLES
+# -----------------
